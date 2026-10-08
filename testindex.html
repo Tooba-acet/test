@@ -291,7 +291,7 @@ let board = [];        // [{id, name, best, bestTime, mistakes, hints, attempts,
    GAS    = served as a Google Apps Script web app (public link; players type name + email; rows go to a Google Sheet)
    Claude = published as a Claude artifact (players are identified by their Claude account) */
 /* PASTE YOUR POWER AUTOMATE FLOW URL (HTTP POST URL) BETWEEN THE QUOTES */
-const SCORES_API = "PASTE_FLOW_URL_HERE";
+const SCORES_API = "https://default91c8e6f79a66417e97775b66173689.eb.environment.api.powerplatform.com:443/powerautomate/automations/direct/cu/16/workflows/c6c213f40291474fb823b7b9082158ba/triggers/manual/paths/invoke?api-version=1&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=Ct_FHDYlDgP_zOOMlKTaizO5WY90AAjiWDisy4dYigU";
 const GAME_ID = "test";
 const API_ON = /^https:\/\/\S+$/.test(SCORES_API);
 const GAS_NATIVE = !!(window.google && google.script && google.script.run);
